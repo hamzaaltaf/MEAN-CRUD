@@ -1,0 +1,21 @@
+<div class="container" ng-init="showEmployee()">
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Area</th>
+        <th>Dept</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td>{{employee.name}}</td>
+          <td>{{employee.area}}</td>
+          <td>{{employee.dept}}</td>
+        </tr>
+    </tbody>
+  </table>
+</div>

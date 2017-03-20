@@ -1,0 +1,23 @@
+<div class="container" ng-init="getEmployees()">
+  <h2>Striped Rows</h2>
+  <p>The .table-striped class adds zebra-stripes to a table:</p>            
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Area</th>
+        <th>Dept</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="emp in employees">
+          <td>{{emp.name}}</td>
+          <td>{{emp.area}}</td>
+          <td>{{emp.dept}}</td>
+          <td><a class='btn btn -primary' href='#/employees/{{emp._id}}/show'>Show</a>
+          <td><a class='btn btn -danger' ng-click= deleteEmployee(emp._id)>Delete</a>
+        </tr>
+    </tbody>
+  </table>
+</div>
